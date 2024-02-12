@@ -25,7 +25,7 @@ cite, em {
 }
 
 .primary-nav {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -39,5 +39,38 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    padding: 10px; 
+    width: 100%;
+
+}
+
+a.current-page {
+    color: #005A9C;
+    font-weight: bold; 
+    text-decoration: underline; /* Additional visual cue */
+}
+
+a.current-page:focus {
+    outline: 3px solid #005A9C; 
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #FFFFFF; /* Choose a background color that fits your site's design */
+    color: #000000; /* Choose a text color that contrasts well with the background */
+    text-decoration: none;
+    z-index: 100; /* Ensure it is above other content */
 }
