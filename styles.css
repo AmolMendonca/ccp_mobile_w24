@@ -48,14 +48,18 @@ p {
 
 a.current-page {
     color: #005A9C;
-    font-weight: bold; 
-    text-decoration: underline; /* Additional visual cue */
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgba(0, 90, 156, 0.1);
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
 a.current-page:focus {
-    outline: 3px solid #005A9C; 
+    outline: 3px solid #005A9C;
     outline-offset: 2px;
 }
+
 
 .skip-link {
     position: absolute;
